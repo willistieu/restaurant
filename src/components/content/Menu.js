@@ -1,15 +1,55 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+const getMenu = axios.create({
+  baseURL: "https://vast-reef-09589.herokuapp.com/api/menu",
+});
+
 export const Menu = () => {
-    return (
-        <>
-            <section id="menu" className="menu section-bg">
-      <div className="container" data-aos="fade-up">
+  const [dishes, setDishes] = useState([]);
 
-        <div className="section-title">
-          <h2>Menu</h2>
-          <p>Check Our Tasty Menu</p>
-        </div>
+  const [isMobile, setIsMobile] = useState(false);
 
-        <div className="row" data-aos="fade-up" data-aos-delay="100">
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        let response = await getMenu.get();
+        setDishes(response.data);
+        console.log(dishes);
+        console.log(isMobile);
+      } catch (error) {
+        console.log(error);
+        
+      }
+    };
+    fetchMenu();
+  }, []);
+
+  return (
+    <>
+      <section
+        id="menu"
+        className="menu section-bg mh-100"
+        // style={{ height: "420vh" }}
+      >
+        <div className="container" data-aos="fade-up" 
+        // style={{  height: 100px }}
+        >
+          <div className="section-title">
+            <h2>Menu</h2>
+            <p>Check Our Tasty Menu</p>
+          </div>
+
+          {/* <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
               <li data-filter="*" className="filter-active">All</li>
@@ -18,11 +58,31 @@ export const Menu = () => {
               <li data-filter=".filter-specialty">Specialty</li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
-        <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
+          <div
+            className="row menu-container h-100"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {dishes.map((dish) => (
+              <>
+                <div className="col-lg-6 menu-item filter-starters">
+                  {/* <img
+                    src={dish.img}
+                    className="menu-img"
+                    alt=""
+                  /> */}
+                  <div className="menu-content">
+                    <a href="#">{dish.name}</a>
+                    <span>{dish.price}</span>
+                  </div>
+                  <div className="menu-ingredients">{dish.content}</div>
+                </div>
+              </>
+            ))}
 
-          <div className="col-lg-6 menu-item filter-starters">
+            {/* <div className="col-lg-6 menu-item filter-starters">
             <img src="assets/img/menu/lobster-bisque.jpg" className="menu-img" alt="" />
             <div className="menu-content">
               <a href="#">Lobster Bisque</a><span>$5.95</span>
@@ -110,12 +170,10 @@ export const Menu = () => {
             <div className="menu-ingredients">
               Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
             </div>
+          </div> */}
           </div>
-
         </div>
-
-      </div>
-    </section>
-        </>
-    )
-}
+      </section>
+    </>
+  );
+};

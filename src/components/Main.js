@@ -16,10 +16,10 @@ export const Main = () => {
                 <About />
                 <Whyus />
                 <Menu />
-                <Specials />
-                <Events />
-                <Book />
-                <Testimonials />
+                {/* <Specials /> */}
+                {/* <Events /> */}
+                {/* <Book /> */}
+                {/* <Testimonials /> */}
                 <Gallery />
                 <Chefs />
                 <Contact />

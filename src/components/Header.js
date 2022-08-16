@@ -4,7 +4,7 @@ export const Header = () => {
       <header id="header" className="fixed-top d-flex align-items-cente">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
           <h1 className="logo me-auto me-lg-0">
-            <a href="index.html">Restaurantly</a>
+            <a href="index.html"><h2>Chibi Chill</h2> <h6>Majland</h6> </a>
           </h1>
 
           <a href="index.html" className="logo me-auto me-lg-0">
@@ -28,19 +28,19 @@ export const Header = () => {
                   Menu
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a className="nav-link scrollto" href="#specials">
                   Specials
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a className="nav-link scrollto" href="#events">
                   Events
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a className="nav-link scrollto" href="#chefs">
-                  Chefs
+                  Staff
                 </a>
               </li>
               <li>
@@ -48,7 +48,7 @@ export const Header = () => {
                   Gallery
                 </a>
               </li>
-              <li className="dropdown">
+              {/* <li className="dropdown">
                 <a href="#">
                   <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
                 </a>
@@ -89,21 +89,21 @@ export const Header = () => {
                     <a href="#">Drop Down 4</a>
                   </li>
                 </ul>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a className="nav-link scrollto" href="#contact">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
 
           <a
-            href="#book-a-table"
+            href="#contact"
             className="book-a-table-btn scrollto d-none d-lg-flex"
           >
-            Book a table
+            Contact
           </a>
         </div>
       </header>

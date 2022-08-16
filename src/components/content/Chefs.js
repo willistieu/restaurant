@@ -5,8 +5,8 @@ export const Chefs = () => {
       <div className="container" data-aos="fade-up">
 
         <div className="section-title">
-          <h2>Chefs</h2>
-          <p>Our Proffesional Chefs</p>
+          <h2>Staff</h2>
+          <p>Our Proffesional Staff</p>
         </div>
 
         <div className="row">
@@ -16,7 +16,7 @@ export const Chefs = () => {
               <img src="assets/img/chefs/chefs-1.jpg" className="img-fluid" alt="" />
               <div className="member-info">
                 <div className="member-info-content">
-                  <h4>Walter White</h4>
+                  <h4>Jana Le</h4>
                   <span>Master Chef</span>
                 </div>
                 <div className="social">
@@ -34,8 +34,8 @@ export const Chefs = () => {
               <img src="assets/img/chefs/chefs-2.jpg" className="img-fluid" alt="" />
               <div className="member-info">
                 <div className="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
+                  <h4>Hugi</h4>
+                  <span>Manager</span>
                 </div>
                 <div className="social">
                   <a href=""><i className="bi bi-twitter"></i></a>
@@ -52,8 +52,8 @@ export const Chefs = () => {
               <img src="assets/img/chefs/chefs-3.jpg" className="img-fluid" alt="" />
               <div className="member-info">
                 <div className="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
+                  {/* <h4>William Anderson</h4>
+                  <span>Cook</span> */}
                 </div>
                 <div className="social">
                   <a href=""><i className="bi bi-twitter"></i></a>

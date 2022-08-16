@@ -16,36 +16,15 @@ export const About = () => {
               </div>
             </div>
             <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-              <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assumenda.
-              </h3>
-              <p className="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i className="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
-                </li>
-                <li>
-                  <i className="bi bi-check-circle"></i> Duis aute irure dolor
-                  in reprehenderit in voluptate velit.
-                </li>
-                <li>
-                  <i className="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate trideta storacalaperda mastiro
-                  dolore eu fugiat nulla pariatur.
-                </li>
-              </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+                Chibi Chill restaurant & bar operating on Majland ship brings
+                Asian nightlife and street food to Turku, offering authentic
+                Asian flavors and some dishes that are firsts in Finland. <br /> <br />
+                Come chill and meet the staff that warmly welcomes you! Order a
+                bubble tea and some snacks or a main dish if you’re hungry,
+                relax and have fun. We offer table service so you can just enjoy
+                your time. <br /> <br /> We also have board games and different events such as
+                K-parties and Beer Pong nights.
               </p>
             </div>
           </div>

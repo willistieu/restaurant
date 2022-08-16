@@ -17,14 +17,14 @@ export const Gallery = () => {
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
         <a href="assets/img/gallery/gallery-1.jpg" className="gallery-lightbox" data-gall="gallery-item">
-          <img src="assets/img/gallery/gallery-1.jpg" alt="" className="img-fluid" />
+          <img src="assets/img/gallery/gallery-1.jpg" alt="" className="img-fluid" width="600" height="800"/>
         </a>
       </div>
     </div>
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-2.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a href="assets/img/gallery/gallery-2.jpg" className="gallery-lightbox" data-gall="gallery-item" width="600" height="800">
           <img src="assets/img/gallery/gallery-2.jpg" alt="" className="img-fluid" />
         </a>
       </div>

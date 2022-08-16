@@ -4,7 +4,7 @@ import { Intro } from "./videos/Intro";
 export const Hero = () => {
   const [value, setValue] = useState(false);
 
-  if (value == true) {
+  if (value === true) {
     return (
       <>
         <section id="hero" className="d-flex align-items-center">
@@ -16,9 +16,9 @@ export const Hero = () => {
             <div className="row">
               <div className="col-lg-8">
                 <h1>
-                  Welcome to <span>Restaurantly</span>
+                  Welcome to <span>CHIBI CHILL</span>
                 </h1>
-                <h2>Delivering great food for more than 18 years!</h2>
+                <h2>A boat in the lovely Aurajoki with a whole new concept</h2>
 
                 <div
                   className="btns"
@@ -34,7 +34,7 @@ export const Hero = () => {
                     Our Menu
                   </a>
                   <a
-                    href="#book-a-table"
+                    href="#contact"
                     className="btn-book animated fadeInUp scrollto"
                     onClick={() => {
                       setValue(false);
@@ -56,17 +56,11 @@ export const Hero = () => {
               >
                 <a className="glightbox play-btn" />
               </div> */}
-              
-
-              
-              
             </div>
             <br></br>
             <Intro />
           </div>
-          
         </section>
-        
       </>
     );
   } else {
@@ -81,9 +75,9 @@ export const Hero = () => {
             <div className="row">
               <div className="col-lg-8">
                 <h1>
-                  Welcome to <span>Restaurantly</span>
+                  Welcome to <span>CHIBI CHILL</span>
                 </h1>
-                <h2>Delivering great food for more than 18 years!</h2>
+                <h2>A boat in the lovely Aurajoki with a whole new concept</h2>
 
                 <div className="btns">
                   <a
@@ -93,7 +87,7 @@ export const Hero = () => {
                     Our Menu
                   </a>
                   <a
-                    href="#book-a-table"
+                    href="#contact"
                     className="btn-book animated fadeInUp scrollto"
                   >
                     Book a Table
