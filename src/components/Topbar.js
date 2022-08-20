@@ -9,18 +9,22 @@ export const Topbar = () => {
             </i>
             <br />
             <i className="bi bi-clock d-flex align-items-center ms-4">
-              <span> Mon-Thu: 13.00 - 22.00</span>
+              <span> Monday - Thursday: 13 - 22</span>
               <span>
                 {" "}
-                &nbsp;Fri: 13.00 - 02.00 &nbsp;(kitchen: 13.00 - 21.00)
+                &nbsp;Friday: 13-00 (02)
               </span>
               <span>
                 {" "}
-                &nbsp;Sat: 12.00 - 02.00 &nbsp;(kitchen: 13.00 - 21.00)
+                &nbsp;Saturday: 12-00 (02)
               </span>
               <span>
                 {" "}
-                &nbsp;Sun: 12.00 - 22.00 &nbsp;(kitchen: 12.00 - 21.00)
+                &nbsp;Sunday: 12-22
+              </span>
+              <span>
+                {" "}
+                &nbsp;Kitchen closes at 21.30
               </span>
             </i>
           </div>
