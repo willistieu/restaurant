@@ -67,7 +67,7 @@ export const Menu = () => {
             data-aos-delay="200"
           >
             {dishes.map((dish) => (
-              <div>
+              <>
                 <div className="col-lg-6 menu-item filter-starters">
                   {/* <img
                     src={dish.img}
@@ -80,7 +80,7 @@ export const Menu = () => {
                   </div>
                   <div className="menu-ingredients">{dish.content}</div>
                 </div>
-              </div>
+              </>
             ))}
 
             {/* <div className="col-lg-6 menu-item filter-starters">
