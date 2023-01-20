@@ -32,7 +32,9 @@ export const Menu = () => {
         
       }
     };
-    fetchMenu();
+    setTimeout(() => {
+      fetchMenu();
+    }, 500);
   }, []);
 
   return (
