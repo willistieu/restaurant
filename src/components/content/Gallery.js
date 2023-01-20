@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Gallery = () => {
     return (
         <>
@@ -16,7 +18,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-1.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-1.jpg" alt="" className="img-fluid" width="600" height="800"/>
         </a>
       </div>
@@ -24,7 +26,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-2.jpg" className="gallery-lightbox" data-gall="gallery-item" width="600" height="800">
+        <a className="gallery-lightbox" data-gall="gallery-item" width="600" height="800">
           <img src="assets/img/gallery/gallery-2.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -32,7 +34,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-3.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-3.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -40,7 +42,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-4.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-4.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -48,7 +50,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-5.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-5.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -56,7 +58,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-6.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-6.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -64,7 +66,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-7.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-7.jpg" alt="" className="img-fluid" />
         </a>
       </div>
@@ -72,7 +74,7 @@ export const Gallery = () => {
 
     <div className="col-lg-3 col-md-4">
       <div className="gallery-item">
-        <a href="assets/img/gallery/gallery-8.jpg" className="gallery-lightbox" data-gall="gallery-item">
+        <a className="gallery-lightbox" data-gall="gallery-item">
           <img src="assets/img/gallery/gallery-8.jpg" alt="" className="img-fluid" />
         </a>
       </div>

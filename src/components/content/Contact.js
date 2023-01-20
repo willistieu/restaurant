@@ -1,8 +1,9 @@
+import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
 const MessageClient = axios.create({
-  baseURL: "https://vast-reef-09589.herokuapp.com/api/message",
+  baseURL: "https://chibi-chill-backend.onrender.com/api/message",
 });
 
 export const Contact = () => {
@@ -40,7 +41,7 @@ export const Contact = () => {
       setEmail("");
       setSubject("");
       setMessage("");
-      console.log(messages)
+      console.log(messages);
     } catch (error) {
       console.log(error);
     }
@@ -51,7 +52,7 @@ export const Contact = () => {
     console.log("summited!");
     console.log(name);
     await addMessage();
-    setSentMessage("Your message has been sent. Thank you!")
+    setSentMessage("Your message has been sent. Thank you!");
     // const object = {
     //   name: name,
     //   email: email,
@@ -95,17 +96,18 @@ export const Contact = () => {
                 <div className="address">
                   <i className="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>Läntinen Rantakatu 38, 20100 Turku</p>
+                  <p>Linnankatu 38, 20100 Turku</p>
                 </div>
 
                 <div className="open-hours">
                   <i className="bi bi-clock"></i>
                   <h4>Open Hours:</h4>
                   <p>
-                    Monday-Thursday:13.00 - 22.00 PM <br />
-                    Friday: 13.00 - 02.00 (kitchen: 13.00 -21.00) <br />
-                    Saturday: 12.00 - 02.00 (kitchen: 13.00 -21.00) <br />
-                    Sunday: 12.00 - 22.00 (kitchen: 12.00 -21.00)
+                    <span> Monday - Thursday: 13 - 22</span> <br />
+                    <span> Friday: 13-00 (02)</span> <br />
+                    <span> Saturday: 12-00 (02)</span> <br />
+                    <span> Sunday: 12-22</span> <br />
+                    <span> Kitchen closes at 21.30</span>
                   </p>
                 </div>
 
@@ -166,7 +168,7 @@ export const Contact = () => {
                   />
                 </div>
                 <div className="form-group mt-3">
-                  <input
+                  <textarea
                     type="text"
                     className="form-control"
                     name="message"
@@ -174,18 +176,18 @@ export const Contact = () => {
                     placeholder="Message"
                     required
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  ></input>
+                    onChange={(e) => {setMessage(e.target.value)
+                    console.log(message)}}
+                  ></textarea>
                 </div>
                 <div className="text-center">
                   <button type="submit">Send Message</button>
                 </div>
               </form>
-                <div className="text-center">
-                      <br />
-                    {sentMessage}
-                </div>
-
+              <div className="text-center">
+                <br />
+                {sentMessage}
+              </div>
             </div>
           </div>
         </div>

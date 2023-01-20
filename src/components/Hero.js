@@ -19,6 +19,19 @@ export const Hero = () => {
                   Welcome to <span>CHIBI CHILL</span>
                 </h1>
                 <h2>A boat in the lovely Aurajoki with a whole new concept</h2>
+                
+                <div>
+                  <h2>
+                    <i className="bi-clock">
+                      <span>{"  "}Opening hours</span>
+                    </i>
+                  </h2>
+                  <span> Monday - Thursday: 13 - 22</span> <br />
+                  <span> &nbsp;Friday: 13-00 (02)</span> <br />
+                  <span> &nbsp;Saturday: 12-00 (02)</span> <br />
+                  <span> &nbsp;Sunday: 12-22</span> <br />
+                  <span> &nbsp;Kitchen closes at 21.30</span>
+                </div>
 
                 <div
                   className="btns"
@@ -79,6 +92,21 @@ export const Hero = () => {
                 </h1>
                 <h2>A boat in the lovely Aurajoki with a whole new concept</h2>
 
+                <div>
+                  <h2>
+                    <i className="bi-clock">
+                      <span>{"  "}Opening hours</span>
+                    </i>
+                  </h2>
+                  <span> Monday - Thursday: 13 - 22</span> <br />
+                  <span> &nbsp;Friday: 13-00 (02)</span> <br />
+                  <span> &nbsp;Saturday: 12-00 (02)</span> <br />
+                  <span> &nbsp;Sunday: 12-22</span> <br />
+                  <span> &nbsp;Kitchen closes at 21.30</span>
+                </div>
+
+
+                
                 <div className="btns">
                   <a
                     href="#menu"

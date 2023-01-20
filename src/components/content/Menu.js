@@ -1,8 +1,9 @@
+import React from 'react';
 import axios from "axios";
 import { useState, useEffect } from "react";
 
 const getMenu = axios.create({
-  baseURL: "https://vast-reef-09589.herokuapp.com/api/menu",
+  baseURL: "https://chibi-chill-backend.onrender.com/api/menu",
 });
 
 export const Menu = () => {

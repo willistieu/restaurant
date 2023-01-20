@@ -1,3 +1,4 @@
+import React from 'react';
 import aboutImg from "./img/about.jpg";
 
 export const About = () => {

@@ -1,10 +1,14 @@
+import React from "react";
+
 export const Header = () => {
   return (
     <>
       <header id="header" className="fixed-top d-flex align-items-cente">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
           <h1 className="logo me-auto me-lg-0">
-            <a href="index.html"><h2>Chibi Chill</h2> <h6>Majland</h6> </a>
+            <a href="index.html">
+              <h2>Chibi Chill</h2> <h6>Majland</h6>
+            </a>
           </h1>
 
           <a href="index.html" className="logo me-auto me-lg-0">
@@ -48,6 +52,7 @@ export const Header = () => {
                   Gallery
                 </a>
               </li>
+
               {/* <li className="dropdown">
                 <a href="#">
                   <span>Drop Down</span> <i className="bi bi-chevron-down"></i>
@@ -90,13 +95,52 @@ export const Header = () => {
                   </li>
                 </ul>
               </li> */}
+
               {/* <li>
                 <a className="nav-link scrollto" href="#contact">
                   Contact
                 </a>
               </li> */}
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+
+            <i className="bi dropdown mobile-nav-toggle">
+              <span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+              <span className="bi-list"></span>
+              <ul className="navbar">
+                <li>
+                  <a className="nav-link scrollto active" href="#hero">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link scrollto" href="#about">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link scrollto" href="#menu">
+                    Menu
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link scrollto" href="#chefs">
+                    Staff
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link scrollto" href="#gallery">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link scrollto" href="#contact">
+                  Contact
+                  </a>
+                </li>
+              </ul>
+            </i>
           </nav>
 
           <a

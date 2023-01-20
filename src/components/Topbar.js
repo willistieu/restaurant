@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Topbar = () => {
   return (
     <>
@@ -8,7 +10,7 @@ export const Topbar = () => {
               <span>0458070840</span>
             </i>
             <br />
-            <i className="bi bi-clock d-flex align-items-center ms-4">
+            {/* <i className="bi bi-clock d-flex align-items-center ms-4">
               <span> Monday - Thursday: 13 - 22</span>
               <span>
                 {" "}
@@ -26,7 +28,7 @@ export const Topbar = () => {
                 {" "}
                 &nbsp;Kitchen closes at 21.30
               </span>
-            </i>
+            </i> */}
           </div>
         </div>
       </div>
