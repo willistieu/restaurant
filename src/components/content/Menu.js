@@ -3,7 +3,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const getMenu = axios.create({
-  baseURL: "https://chibi-chill-backend.onrender.com/api/menu",
+  baseURL: "http://localhost:3001/api/menu",
+  // baseURL: "https://chibi-chill-backend.onrender.com/api/menu",
 });
 
 export const Menu = () => {
